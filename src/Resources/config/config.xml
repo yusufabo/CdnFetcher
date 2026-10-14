@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Shopware 5 database</title>
+        <title lang="de-DE">Shopware-5-Datenbank</title>
+
+        <input-field type="text">
+            <name>dbHost</name>
+            <label>Host</label>
+            <defaultValue>127.0.0.1</defaultValue>
+        </input-field>
+
+        <input-field type="int">
+            <name>dbPort</name>
+            <label>Port</label>
+            <defaultValue>3306</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>dbName</name>
+            <label>Database name</label>
+            <label lang="de-DE">Datenbankname</label>
+            <defaultValue>shopware5</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>dbUser</name>
+            <label>User</label>
+            <label lang="de-DE">Benutzer</label>
+        </input-field>
+
+        <input-field type="password">
+            <name>dbPassword</name>
+            <label>Password</label>
+            <label lang="de-DE">Passwort</label>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Media</title>
+        <title lang="de-DE">Medien</title>
+
+        <input-field type="url">
+            <name>cdnBaseUrl</name>
+            <label>CDN base URL (the "media/..." path is appended)</label>
+            <label lang="de-DE">CDN-Basis-URL (der Pfad "media/..." wird angehängt)</label>
+            <defaultValue>https://mppull2.b-cdn.net</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>localMediaRoot</name>
+            <label>Local Shopware 5 root directory (the folder that contains "media")</label>
+            <label lang="de-DE">Lokales Shopware-5-Stammverzeichnis (der Ordner, der "media" enthält)</label>
+            <defaultValue>/opt/bitnami/apache/htdocs/web</defaultValue>
+        </input-field>
+    </card>
+
+</config>

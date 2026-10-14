@@ -1,0 +1,37 @@
+{
+    "name": "hachmann-consulting/cdn-fetcher",
+    "description": "Downloads Shopware 5 media files that are missing locally from the CDN.",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yusuf Abo",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.7.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "HachmannConsulting\\CdnFetcher\\CdnFetcher",
+        "label": {
+            "de-DE": "CDN Fetcher",
+            "en-GB": "CDN Fetcher"
+        },
+        "description": {
+            "de-DE": "Lädt lokal fehlende Shopware-5-Mediendateien vom CDN herunter.",
+            "en-GB": "Downloads Shopware 5 media files that are missing locally from the CDN."
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "HachmannConsulting\\CdnFetcher\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HachmannConsulting\\CdnFetcher\\Tests\\": "tests/"
+        }
+    }
+}
